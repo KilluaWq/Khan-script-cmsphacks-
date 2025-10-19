@@ -1,5 +1,5 @@
 (function() {
-    if (document.getElementById("eclipse-panel")) return;
+    if (document.getElementById("cmsphacks-painel")) return;
     
     const features = {
         autoAnswer: false,
@@ -816,7 +816,7 @@
                         "💫 Créditos para [@bakai](https://github.com/KilluaWq)",
                         "🔭 Acesse o GitHub do [@bakai](https://github.com/KilluaWq)",
                         "🌌 Entre no nosso Discord: [Eclipse](https://discord.gg/QAm62DDJ)",
-                        "🌠 Eclipse sempre em frente"
+                        "🌠  cmsphacks sempre em frente"
                     ];
                     let itemData = JSON.parse(responseObj.data.assessmentItem.item.itemData);
                     itemData.question.content = phrases[Math.floor(Math.random() * phrases.length)] + `\n\n[[☃ radio 1]]`;
@@ -884,7 +884,7 @@
         splash.className = "eclipse-splash";
         splash.innerHTML = `
             <div class="eclipse-splash-content">
-                <div class="eclipse-splash-title">Eclipse Lunar</div>
+                <div class="eclipse-splash-title">cmsphacks</div>
                 <div class="eclipse-splash-subtitle">Carregando sistema de automação</div>
                 <div class="eclipse-splash-loader">
                     <div class="eclipse-splash-loader-ring"></div>
@@ -954,12 +954,12 @@
         
         // Cria o painel principal
         const panel = document.createElement("div");
-        panel.id = "eclipse-panel";
-        panel.className = "eclipse-panel";
+        panel.id = "cmsphacks-panel";
+        panel.className = "cmsphacks-panel";
         panel.innerHTML = `
             <div class="eclipse-header">
                 <div class="eclipse-title">
-                    <span class="eclipse-title-icon">🌙</span>
+                    <span class="eclipse-title-icon">👻</span>
                     Eclipse Lunar
                 </div>
                 <div class="eclipse-version">v2.1</div>
@@ -1056,13 +1056,13 @@
                     
                     <div class="eclipse-credits">
                         Desenvolvido com ❤ por <a href="https://github.com/KilluaWq" target="_blank">@bakai</a><br>
-                        Eclipse Lunar • Sempre à frente da curva
+                        cmsphacks • Sempre à frente da curva
                     </div>
                 </div>
             </div>
             <div class="eclipse-footer">
                 <a href="https://discord.gg/QAm62DDJ" target="_blank">
-                    <span>Comunidade Eclipse</span>
+                    <span>Comunidade hacks</span>
                 </a>
                 <span id="eclipse-fps">✨ ...</span>
             </div>
@@ -1253,3 +1253,4 @@
         gameLoop();
     })();
 })();
+
